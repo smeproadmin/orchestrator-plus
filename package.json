@@ -1,0 +1,45 @@
+{
+  "name": "smepro-ios",
+  "version": "0.1.0",
+  "description": "SMEPro Intelligence Orchestration System (IOS+) — Deterministic Compliance as an Operating System",
+  "private": true,
+  "license": "UNLICENSED",
+  "author": {
+    "name": "Christopher Miguez",
+    "email": "csmiguez@smepro.app",
+    "url": "https://smepro.app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smepro/ios-plus.git"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "test": "node --test tests/**/*.js",
+    "test:injection": "node tests/injection-scenarios/index.js",
+    "test:policy": "node tests/policy-validation/index.js",
+    "test:udm": "node tests/udm-resolution/index.js",
+    "lint": "eslint core/ icoos/ tests/",
+    "validate:schemas": "node scripts/validate-schemas.js",
+    "docs:build": "node scripts/build-docs.js"
+  },
+  "dependencies": {
+    "openclaw": "latest"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  },
+  "keywords": [
+    "compliance",
+    "agentic-ai",
+    "openclaw",
+    "ios-plus",
+    "regulatory",
+    "oil-gas",
+    "msogb",
+    "rrc",
+    "deterministic-ai"
+  ]
+}
